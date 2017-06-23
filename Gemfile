@@ -31,3 +31,6 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'friendly_id', '~> 5.1.0'
 gem 'devise', '~> 4.3'
+gem 'omniauth-facebook', '~> 4.0'
+# gem 'omniauth-gplus', '~> 2.0', '>= 2.0.1'
+gem 'dotenv-rails', :groups => [:development, :test]
