@@ -9,3 +9,6 @@
 - Instagram api
 - Image uploader
 - Pagination
+
+##Add Later:
+- .env: GPLUS_KEY AND GPLUS_SECRET 
