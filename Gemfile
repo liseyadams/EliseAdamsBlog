@@ -34,3 +34,6 @@ gem 'devise', '~> 4.3'
 gem 'omniauth-facebook', '~> 4.0'
 # gem 'omniauth-gplus', '~> 2.0', '>= 2.0.1'
 gem 'dotenv-rails', :groups => [:development, :test]
+gem 'materialize-sass', '~> 0.99.0'
+gem 'material_icons', '~> 2.2', '>= 2.2.1'
+gem 'jquery-rails', '~> 4.3', '>= 4.3.1'
