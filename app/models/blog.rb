@@ -12,4 +12,12 @@ class Blog < ApplicationRecord
   def set_defaults
     self.main_image ||= "http://via.placeholder.com/350x150"
   end
+
+  def self.special_blogs
+    all
+  end
+
+  def self.featured_blogs
+    limit(2)
+  end
 end

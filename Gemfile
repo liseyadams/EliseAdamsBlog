@@ -34,3 +34,5 @@ gem 'devise', '~> 4.3'
 gem 'omniauth-facebook', '~> 4.0'
 # gem 'omniauth-gplus', '~> 2.0', '>= 2.0.1'
 gem 'dotenv-rails', :groups => [:development, :test]
+gem 'bootstrap', '~> 4.0.0.alpha6'
+gem 'jquery-rails', '~> 4.3', '>= 4.3.1'
