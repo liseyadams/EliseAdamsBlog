@@ -37,3 +37,4 @@ gem 'dotenv-rails', :groups => [:development, :test]
 gem 'bootstrap', '~> 4.0.0.alpha6'
 gem 'jquery-rails', '~> 4.3', '>= 4.3.1'
 gem 'Adams_copyright_tool', git: 'https://github.com/liseyadams/Adams_copyright_tool'
+gem 'petergate', '~> 1.7', '>= 1.7.5'
