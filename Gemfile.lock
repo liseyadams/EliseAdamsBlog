@@ -1,3 +1,9 @@
+GIT
+  remote: https://github.com/liseyadams/Adams_copyright_tool
+  revision: 2f6646e99b5c8b4ed5b1e361b8e544229ca3aad4
+  specs:
+    Adams_copyright_tool (0.1.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -231,6 +237,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  Adams_copyright_tool!
   bootstrap (~> 4.0.0.alpha6)
   byebug
   capybara (~> 2.14)
