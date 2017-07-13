@@ -177,8 +177,41 @@ body {
   .card-block {
   color: black;
   text-align: left;
+  text-shadow: none;
   }
 
   .back-link {
   text-shadow: none;
   }
+
+  .text-size{
+  font-size: 20px;
+   }
+
+   .login-link a {
+   color: black;
+   }
+
+  .auth-links a {
+  color: #5bc0de;
+  text-decoration: none;
+}
+
+  .hovering-effect:hover a {
+  text-decoration: none;
+  color: white;
+}
+
+.movement {
+  float: right;
+  margin: 0px 12px 5px 5px;
+}
+
+.aligning{
+  text-align: center;
+  padding-top: 200px;
+}
+
+.form-group {
+  padding-right: -15px;
+}
