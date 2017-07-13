@@ -166,10 +166,19 @@ body {
  */
 
  .button-style {
- font-size: 95px;
+  font-size: 95px;
   }
 
  .blog-link {
- font-weight: lighter;
- text-decoration: none !important;
+  font-weight: lighter;
+  text-decoration: none !important;
+  }
+
+  .card-block {
+  color: black;
+  text-align: left;
+  }
+
+  .back-link {
+  text-shadow: none;
   }
