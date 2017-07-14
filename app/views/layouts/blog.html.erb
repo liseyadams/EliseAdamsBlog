@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html>
   <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
     <title><%= @page_title %></title>
     <%= csrf_meta_tags %>
 
@@ -10,15 +14,34 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
   <body>
-      <p class="notice"><%= notice %></p>
-      <p class="alert"><%= alert %></p>
+      
+      <%= render 'shared/blog_nav' %>
 
-    <%= render "shared/nav", location: 'bottom' %>
+      <%= render 'shared/carousel' %>
 
-    <%= login_helper %>
+    <div class="blog-header">
+      <div class="container">
+          <h1 class="blog-title">Kaden + Elise</h1>
+          <p class="lead blog-description">Soul-Mates, Adventures, &amp; Memories</p>
+      </div>
+        <div class="write-new">
+          <%= link_to 'Write A New Blog Post', new_blog_path, class: "auth-links btn btn-outline-info hovering-effect"  if logged_in?(:site_admin) %>
+        </div>
+    </div>
+    
+      <div class="row">
+          <%= yield %>
+          <%= render 'shared/blog_sidebar' %>
+      </div>
+   
 
-    <%= yield %>
-
-    <%= source_helper("blog") %>
+    <footer class="blog-footer">
+      <p><%= render "shared/application_footer" %></p>
+      <p>
+        <a class="auth-links btn btn-outline-info hovering-effect" href="<%= blogs_path %>">Back to top</a>
+      </p>
+    </footer>
+          <%= source_helper("blog") %>
+    
   </body>
 </html>

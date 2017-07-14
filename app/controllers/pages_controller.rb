@@ -7,5 +7,6 @@ class PagesController < ApplicationController
   end
 
   def gallery
+    @photos = Blog.all
   end
 end

@@ -11,15 +11,22 @@
     </div>
   <% end %>
 
-  <div class="field">
+  <div class="form-group">
     <%= form.label :title %>
-    <%= form.text_field :title, id: :blog_title %>
+    <%= form.text_field :title, id: :blog_title, class: 'form-control' %>
   </div>
 
-  <div class="field">
+  <div class="form-group">
     <%= form.label :body %>
-    <%= form.text_area :body, id: :blog_body %>
+    <%= form.text_area :body, id: :blog_body, class: 'form-control', rows: 15 %>
   </div>
+
+  <div class="form-group">
+    <label class="btn btn-outline-info">
+      Upload an Image <%= form.file_field :main_image, style: 'display:none' %>
+    </label>
+  </div>
+  
 
   <div class="form-group">
     <%= form.label :topic_id %>
@@ -32,7 +39,13 @@
       %>
   </div>
 
-  <div class="actions">
-    <%= form.submit %>
+  <div class="form-group">
+    <%= form.submit "Submit", class: 'btn btn-outline-info' %>
+  <div class="auth-links btn btn-outline-info hovering-effect back">
+    <%= link_to 'Back', blogs_path %>
+  </div>
+    <div class="auth-links btn btn-outline-info hovering-effect back">
+      <%= link_to 'Show', @blog %>
+    </div>
   </div>
 <% end %>

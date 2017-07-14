@@ -7,11 +7,7 @@ class Blog < ApplicationRecord
 
   belongs_to :topic
 
-  after_initialize :set_defaults
-
-  def set_defaults
-    self.main_image ||= "http://via.placeholder.com/350x150"
-  end
+  mount_uploader :main_image, BlogUploader
 
   def self.special_blogs
     all

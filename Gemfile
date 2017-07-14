@@ -33,8 +33,12 @@ gem 'friendly_id', '~> 5.1.0'
 gem 'devise', '~> 4.3'
 gem 'omniauth-facebook', '~> 4.0'
 # gem 'omniauth-gplus', '~> 2.0', '>= 2.0.1'
-gem 'dotenv-rails', :groups => [:development, :test]
+# gem 'dotenv-rails', :groups => [:development, :test]
 gem 'bootstrap', '~> 4.0.0.alpha6'
 gem 'jquery-rails', '~> 4.3', '>= 4.3.1'
 gem 'Adams_copyright_tool', git: 'https://github.com/liseyadams/Adams_copyright_tool'
 gem 'petergate', '~> 1.7', '>= 1.7.5'
+gem 'carrierwave', '~> 1.1'
+gem 'mini_magick', '~> 4.8'
+gem 'carrierwave-aws', '~> 1.1'
+gem 'dotenv-rails', '~> 2.2', '>= 2.2.1'
