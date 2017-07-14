@@ -215,3 +215,31 @@ body {
 .form-group {
   padding-right: -15px;
 }
+
+.titling {
+  text-align: center;
+}
+
+.editing > .card {
+  width: 67rem;
+  margin: 0 auto;
+  float: none;
+}
+
+.sign_up > .card {
+  width: 60rem;
+  margin: 0 auto;
+  float: none;
+}
+
+.login > .card {
+  width: 28rem;
+  margin: 0 auto;
+  float: none;
+}
+
+.password {
+  width: 33rem;
+  margin: 0 auto;
+  float: none;
+}
