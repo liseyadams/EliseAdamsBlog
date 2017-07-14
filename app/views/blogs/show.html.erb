@@ -1,18 +1,20 @@
-<p id="notice"><%= notice %></p>
+<div class="col-sm-8 blog-main">
 
-<p>
-  <%= @blog.title %>
-</p>
+    <h2><%= @blog.title %></h2>
 
-<p>
-  <%= @blog.body %>
-</p>
+    <p>
+      <%= @blog.body %>
+    </p>
 
+    <p>
+      <%= image_tag @blog.main_image %>
+    </p>
 
-<p>
-  <%= image_tag @blog.main_image %>
-</p>
+    <div class="auth-links btn btn-outline-info hovering-effect back">
+        <%= link_to 'Edit', edit_blog_path(@blog) %>
+      </div>
+    <div class="auth-links btn btn-outline-info hovering-effect back">
+        <%= link_to 'Back', blogs_path %>
+    </div>
 
-
-<%= link_to 'Edit', edit_blog_path(@blog) %> |
-<%= link_to 'Back', blogs_path %>
+</div>

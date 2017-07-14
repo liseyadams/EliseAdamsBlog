@@ -263,3 +263,12 @@ body {
   margin: 0 auto;
   width: 900px;
 }
+
+.back a {
+  color: #5bc0de;
+}
+
+.back:hover a {
+  text-decoration: none;
+  color: white;
+  }
