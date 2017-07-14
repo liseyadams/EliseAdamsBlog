@@ -1,20 +1,19 @@
 <div class="col-sm-8 blog-main">
 
-    <h2><%= @blog.title %></h2>
+      <h2><%= @blog.title %></h2>
+      <p>
+        <%= image_tag @blog.main_image, width: '100%' %>
+      </p>
 
-    <p>
-      <%= @blog.body %>
-    </p>
+      <p>
+        <%= @blog.body %>
+      </p>
 
-    <p>
-      <%= image_tag @blog.main_image %>
-    </p>
 
-    <div class="auth-links btn btn-outline-info hovering-effect back">
-        <%= link_to 'Edit', edit_blog_path(@blog) %>
+      <div class="auth-links btn btn-outline-info hovering-effect back">
+          <%= link_to 'Edit', edit_blog_path(@blog) %>
+        </div>
+      <div class="auth-links btn btn-outline-info hovering-effect back">
+          <%= link_to 'Back', blogs_path %>
       </div>
-    <div class="auth-links btn btn-outline-info hovering-effect back">
-        <%= link_to 'Back', blogs_path %>
-    </div>
-
 </div>
