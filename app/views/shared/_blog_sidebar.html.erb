@@ -4,14 +4,22 @@
     <p>Hi, my name is Elise. I love blogging and sharing my thoughts, exeriences, and adventures. I am a software developer who is passionate about changing lives. I am obsessed with Harry Potter and the magical world. I look forward to Taco Tuesdays. I have the worlds greated husband and the best support system.</p>
   </div>
   <div class="sidebar-module">
-    <h4>Follow Me</h4>
-    <ol class="list-unstyled">
-      <li><a href="https://github.com/liseyadams">GitHub</a></li>
-      <li><a href="https://twitter.com/LiseyAdams">Twitter</a></li>
-      <li><a href="https://www.facebook.com/elise.neuman.5">Facebook</a></li>
-      <li><a href="https://www.instagram.com/liseyadams/">Instagram</a></li>
-      <li><a href="https://www.linkedin.com/in/elise-adams-8265ba13a/">LinkedIn</a></li>
-      <li><a href="https://www.pinterest.com/lovelylisey28/">Pinterest</a></li>
+    <h4 class="centering">Follow Me</h4>
+    <ol class="list-unstyled social-links">
+    <div class="row">
+        <div class="col-sm-2"></div>
+        <div class="col-sm-4 social-icon">
+            <li><a href="https://github.com/liseyadams"><%= fa_icon "github" %></a></li>
+            <li><a href="https://twitter.com/LiseyAdams"><%= fa_icon "twitter-square" %></a></li>
+            <li><a href="https://www.facebook.com/elise.neuman.5"><%= fa_icon "facebook-square" %></a></li>
+        </div>
+        <div class="col-sm-4 social-icon">
+            <li><a href="https://www.pinterest.com/lovelylisey28/"><%= fa_icon "pinterest" %></a></li>
+            <li><a href="https://www.linkedin.com/in/elise-adams-8265ba13a/"><%= fa_icon "linkedin-square" %></a></li>
+            <li><a href="https://www.instagram.com/liseyadams/"><%= fa_icon "instagram", class: "instagram-icon" %></a></li>
+        </div>
+      <div class="col-sm-2"></div>
+      </div>
     </ol>
   </div>
 </div>

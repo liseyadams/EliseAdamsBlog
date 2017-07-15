@@ -1,4 +1,6 @@
 @import "bootstrap";
+@import "font-awesome";
+@import "gritter";
 
 /*
  * Globals
@@ -295,9 +297,46 @@ body {
   }
 
   .write-new {
-   padding-left: 200px;
+   padding-left: 120px;
   }
 
-  .sidebar-module sidebar-module-inset {
+ .list-unstyled {
+  font-size: 50px;
+  text-align: center;
+ }
 
-  }
+ .centering {
+ text-align: center;
+ }
+
+ .social-links li a {
+  color: #5bc0de;
+  text-align: center;
+}
+
+.social-icon {
+  padding: 10px;
+  padding-right: -15px;
+}
+
+.instagram-icon {
+    font-size: 46px;
+    border-top: 2.75px;
+    border-bottom: 1px;
+    border-right: 4px;
+    border-left: 4px;
+    border-style: solid;
+    border-color: #5bc0de;
+    border-radius: 8px;
+    color: white;
+    background-color: #5bc0de;
+    background-clip: border-box;
+}
+
+
+
+
+
+
+
+

@@ -1,4 +1,4 @@
-<%= form_with(model: blog, local: true) do |form| %>
+<%= form_for(blog) do |f| %>
   <% if blog.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(blog.errors.count, "error") %> prohibited this blog from being saved:</h2>
@@ -12,25 +12,25 @@
   <% end %>
 
   <div class="form-group">
-    <%= form.label :title %>
-    <%= form.text_field :title, id: :blog_title, class: 'form-control' %>
+    <%= f.label :title %>
+    <%= f.text_field :title, id: :blog_title, class: 'form-control' %>
   </div>
 
   <div class="form-group">
-    <%= form.label :body %>
-    <%= form.text_area :body, id: :blog_body, class: 'form-control', rows: 15 %>
+    <%= f.label :body %>
+    <%= f.text_area :body, id: :blog_body, class: 'form-control', rows: 15 %>
   </div>
 
   <div class="form-group">
     <label class="btn btn-outline-info">
-      Upload an Image <%= form.file_field :main_image, style: 'display:none' %>
+      Upload an Image <%= f.file_field :main_image, style: 'display:none' %>
     </label>
   </div>
   
 
   <div class="form-group">
-    <%= form.label :topic_id %>
-    <%= form.collection_select(:topic_id, Topic.all, :id, :title, 
+    <%= f.label :topic_id %>
+    <%= f.collection_select(:topic_id, Topic.all, :id, :title, 
                                             {
                                               include_blank: true
                                             },
@@ -40,7 +40,7 @@
   </div>
 
   <div class="form-group">
-    <%= form.submit "Submit", class: 'btn btn-outline-info' %>
+    <%= f.submit "Submit", class: 'btn btn-outline-info' %>
   <div class="auth-links btn btn-outline-info hovering-effect back">
     <%= link_to 'Back', blogs_path %>
   </div>

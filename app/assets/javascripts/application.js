@@ -13,5 +13,6 @@
 //= require jquery3
 //= require bootstrap-sprockets
 //= require rails-ujs
+//= require gritter
 //= require turbolinks
 //= require_tree .
