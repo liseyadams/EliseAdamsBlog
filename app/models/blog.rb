@@ -7,6 +7,8 @@ class Blog < ApplicationRecord
 
   belongs_to :topic
 
+  has_many :comments, dependent: :destroy
+
   mount_uploader :main_image, BlogUploader
 
   def self.special_blogs
