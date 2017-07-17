@@ -164,6 +164,7 @@ h6, .h6 {
   text-align: center;
   background-color: #f9f9f9;
   border-top: .05rem solid #e5e5e5;
+  margin-top: 20px;
 }
 .blog-footer p:last-child {
   margin-bottom: 0;
@@ -297,7 +298,7 @@ body {
   }
 
   .write-new {
-   padding-left: 120px;
+   padding-left: 280px;
   }
 
  .list-unstyled {
@@ -333,10 +334,22 @@ body {
     background-clip: border-box;
 }
 
+.comment-card > .card {
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
 
+.thumb-image {
+  margin-left: 120px;
+  margin-bottom: 15px;
+}
 
+.comment-attribution {
+  font-size: .8em;
+  font-style: italic;
+}
 
-
-
-
+.comment-name {
+  font-weight: 700;
+}
 
