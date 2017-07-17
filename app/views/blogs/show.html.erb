@@ -9,6 +9,19 @@
         <%= @blog.body %>
       </p>
 
+      <% unless current_user.is_a? GuestUser %>
+        <%= form_for @comment, url: '#' do |f| %>
+          <div class="form-group">
+            <%= f.label :content %>
+            <%= f.text_area :content , class: 'form-control' %>
+          </div>
+
+          <%= f.submit 'Post Comment', class: "auth-links btn btn-outline-info hovering-effect back" %>
+        <% end %>
+      <% end %>
+
+      <%= render @blog.comments %>
+
 
       <div class="auth-links btn btn-outline-info hovering-effect back">
           <%= link_to 'Edit', edit_blog_path(@blog) %>
