@@ -19,4 +19,12 @@ module ApplicationHelper
   def copyright_generator
     AdamsCopyrightTool::Renderer.copyright 'Elise Adams', 'All rights reserved'
   end
+
+  def alerts 
+    alert = (flash[:alert] || flash[:error] || flash[:notice] )
+
+    if alert
+      js add_gritter(alert, title: "Notice")
+    end
+  end
 end
