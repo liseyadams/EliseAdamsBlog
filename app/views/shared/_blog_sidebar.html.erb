@@ -3,6 +3,14 @@
     <%= image_tag "elise.jpg", height: "160", width: "150", alt: "Picture of Elise Adams", class: "thumb-image" %>
     <p>Hi, my name is Elise. I love blogging and sharing my thoughts, exeriences, and adventures. I am a software developer who is passionate about changing lives. I am obsessed with Harry Potter and the magical world. I look forward to Taco Tuesdays. I have the worlds greated husband and the best support system.</p>
   </div>
+
+  <div class="sidebar-module">
+    <h4 class="head-topic">Topics</h4>
+    <% @set_sidebar_topics.each do |topic| %>
+      <p class="auth-links btn btn-outline-info hovering-effect topic-side"><%= link_to topic.title, topic_path(topic) %></p>
+    <% end %>
+  </div>
+
   <div class="sidebar-module">
     <h4 class="centering">Follow Me</h4>
     <ol class="list-unstyled social-links">
