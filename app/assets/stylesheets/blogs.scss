@@ -298,7 +298,7 @@ body {
   }
 
   .write-new {
-   padding-left: 280px;
+   padding-left: 270px;
   }
 
  .list-unstyled {
@@ -353,3 +353,23 @@ body {
   font-weight: 700;
 }
 
+.topic-label {
+  margin-left: 340px;
+  margin-top: 10px;
+}
+
+ .topics-style a:hover{
+ text-decoration: none;
+  color: black;
+ }
+
+ .topics-style a{
+  color: #5bc0de;
+  text-decoration: none;
+  font-family: Arial;
+ }
+
+ .topics-style div{
+ margin-bottom: 50px;
+ margin-top: 60px;
+ }

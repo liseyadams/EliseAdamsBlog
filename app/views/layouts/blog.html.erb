@@ -25,8 +25,15 @@
           <p class="lead blog-description">Soul-Mates, Adventures, &amp; Memories</p>
       </div>
         <div class="write-new">
+         <span>
           <%= link_to 'Write A New Blog Post', new_blog_path, class: "auth-links btn btn-outline-info hovering-effect"  if logged_in?(:site_admin) %>
+         </span>
         </div>
+         <div class="topic-label">
+         <span>
+           <%= link_to "Topics", topics_path, class: "auth-links btn btn-outline-info hovering-effect" %>
+         </span>
+         </div>
     </div>
     
       <div class="row">
