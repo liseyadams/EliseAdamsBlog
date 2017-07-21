@@ -1,5 +1,6 @@
 @import "bootstrap";
 @import "gritter";
+@import "devise_styles.scss";
 
 
 @font-face {
@@ -246,10 +247,6 @@ font-family: 'Shadows Into Light', cursive;
   padding-right: -15px;
 }
 
-.titling {
-  text-align: center;
-  font-family: 'Abel', sans-serif;
-}
 
 .editing > .card {
   width: 67rem;
