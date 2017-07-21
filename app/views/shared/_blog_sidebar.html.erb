@@ -1,10 +1,10 @@
-<div class="col-sm-3 offset-sm-1 blog-sidebar">
-  <div class="sidebar-module sidebar-module-inset">
+<div class="col-md-3 offset-md-1 blog-sidebar">
+  <div class="sidebar-module sidebar-module-inset image-set">
     <%= image_tag "elise.jpg", height: "160", width: "150", alt: "Picture of Elise Adams", class: "thumb-image" %>
-    <p>Hi, my name is Elise. I love blogging and sharing my thoughts, exeriences, and adventures. I am a software developer who is passionate about changing lives. I am obsessed with Harry Potter and the magical world. I look forward to Taco Tuesdays. I have the worlds greated husband and the best support system.</p>
+    <p class="sidebar-para">Hi, my name is Elise. I love blogging and sharing my thoughts, exeriences, and adventures. I am a software developer who is passionate about changing lives. I am obsessed with Harry Potter and the magical world. I look forward to Taco Tuesdays. I have the worlds greated husband and the best support system.</p>
   </div>
 
-  <div class="sidebar-module">
+  <div class="sidebar-module topic-side-bar">
     <h4 class="head-topic">Topics</h4>
     <% @set_sidebar_topics.each do |topic| %>
       <p class="auth-links btn btn-outline-info hovering-effect topic-side"><%= link_to topic.title, topic_path(topic) %></p>
@@ -15,13 +15,13 @@
     <h4 class="centering">Follow Me</h4>
     <ol class="list-unstyled social-links">
     <div class="row">
-        <div class="col-sm-2"></div>
-        <div class="col-sm-4 social-icon">
+        <div class="col-md-2"></div>
+        <div class="col-md-4 social-icon">
             <li><a href="https://github.com/liseyadams" target="_blank"><%= fa_icon "github" %></a></li>
             <li><a href="https://twitter.com/LiseyAdams" target="_blank"><%= fa_icon "twitter-square" %></a></li>
             <li><a href="https://www.facebook.com/elise.neuman.5" target="_blank"><%= fa_icon "facebook-square" %></a></li>
         </div>
-        <div class="col-sm-4 social-icon">
+        <div class="col-md-4 social-icon">
             <li><a href="https://www.pinterest.com/lovelylisey28/" target="_blank"><%= fa_icon "pinterest" %></a></li>
             <li><a href="https://www.linkedin.com/in/elise-adams-8265ba13a/" target="_blank"><%= fa_icon "linkedin-square" %></a></li>
             <li><a href="https://www.instagram.com/liseyadams/" target="_blank"><%= fa_icon "instagram", class: "instagram-icon" %></a></li>

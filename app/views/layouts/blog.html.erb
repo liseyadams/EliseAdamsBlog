@@ -16,15 +16,16 @@
   <body>
       
       <%= render 'shared/blog_nav' %>
-
+  <div>
       <%= render 'shared/carousel' %>
+  </div>
 
-    <div class="blog-header">
-      <div class="container">
+    <div class="card blog-header">
+      <div class="heading">
           <h1 class="blog-title">Kaden + Elise</h1>
           <p class="lead blog-description">Soul-Mates, Adventures, &amp; Memories</p>
       </div>
-        <div class="write-new">
+        <div class="offset-3 write-new">
          <span>
           <%= link_to 'Write A New Blog Post', new_blog_path, class: "auth-links btn btn-outline-info hovering-effect"  if logged_in?(:site_admin) %>
          </span>
@@ -33,13 +34,15 @@
          <span>
            <%= link_to "Topics", topics_path, class: "auth-links btn btn-outline-info hovering-effect" %>
          </span>
-         </div>
+       </div>
     </div>
     
+    <div class="container">
       <div class="row">
           <%= yield %>
           <%= render 'shared/blog_sidebar' %>
       </div>
+    </div>
    
 
     <footer class="blog-footer">
