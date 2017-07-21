@@ -1,6 +1,22 @@
 @import "bootstrap";
 @import "gritter";
 
+
+@font-face {
+  font-family: 'Vibur';
+  src:font-url('Vibur-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'ShadowsIntoLight';
+  src:font-url('ShadowsIntoLight.ttf');
+}
+
+@font-face {
+  font-family: 'Abel Regular';
+  src:font-url('Abel-Regular.ttf');
+}
+
 /*
  * Globals
  */
@@ -31,10 +47,20 @@ html,
 body {
   height: 100%;
 }
+
 body {
   color: #fff;
   text-align: center;
   text-shadow: 0 .05rem .1rem rgba(0,0,0,.5);
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+font-family: 'Shadows Into Light', cursive;
 }
 
 /* Extra markup and styles for table-esque vertical and horizontal centering */
@@ -166,12 +192,16 @@ body {
  */
 
  .button-style {
-  font-size: 95px;
+  font-size: 500%;
+  background: none;
+  border: none;
   }
 
  .blog-link {
   font-weight: lighter;
   text-decoration: none !important;
+  margin-left: 20%;
+  position: fixed;
   }
 
   .card-block {
@@ -244,14 +274,6 @@ body {
   float: none;
 }
 
-.image-adjust {
-margin-left: 25%;
-}
-
-.text-adjust {
-  margin-top: 50px;
-}
-
 #background {
   position: fixed;
   top: 50%;
@@ -282,3 +304,51 @@ margin-left: 25%;
  .blog-link {
   font-family: 'Vibur', cursive;
  }
+
+.app-card-container {
+  color: black;
+} 
+
+
+.text-adjust {
+  padding-left: 10%;
+  padding-right: 6%;
+  padding-top: 1%;
+}
+
+.profile-img {
+  border: 1px solid grey;
+}
+
+.image-adjust {
+  padding-top: 1%;
+  padding-left: 1%;
+  padding-right: 1%;
+  padding-bottom: 1%;
+}
+
+.home-card.card {
+  background: none;
+  border: none;
+}
+
+.app-footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: none;
+  text-align: center;
+}
+
+.home-row {
+ width: inherit;
+ height: inherit;
+ margin: 0;
+ padding: 0;
+}
+
+.text-adjust p {
+     font-family: 'Abel', Courier New;
+}
