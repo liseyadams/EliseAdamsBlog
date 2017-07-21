@@ -2,6 +2,16 @@
 @import "font-awesome";
 @import "gritter";
 
+@font-face {
+  font-family: 'ShadowsIntoLight';
+  src:font-url('ShadowsIntoLight.ttf');
+}
+
+@font-face {
+  font-family: 'Abel Regular';
+  src:font-url('Abel-Regular.ttf');
+}
+
 /*
  * Globals
  */
@@ -12,9 +22,8 @@
   }
 }
 
-body {
-  font-family: Georgia, "Times New Roman", Times, serif;
-  color: #555;
+body { 
+font-family: 'Abel', sans-serif;
 }
 
 h1, .h1,
@@ -23,7 +32,8 @@ h3, .h3,
 h4, .h4,
 h5, .h5,
 h6, .h6 {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  
+font-family: 'Shadows Into Light', cursive;
   font-weight: normal;
   color: #333;
 }
@@ -450,3 +460,4 @@ body {
 .blog-sidebar-source {
   margin-top: 20px;
 }
+
