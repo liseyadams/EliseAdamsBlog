@@ -200,7 +200,7 @@ font-family: 'Shadows Into Light', cursive;
  .blog-link {
   font-weight: lighter;
   text-decoration: none !important;
-  margin-left: 20%;
+  margin-left: 20vw;
   position: fixed;
   }
 
@@ -352,3 +352,7 @@ font-family: 'Shadows Into Light', cursive;
 .text-adjust p {
      font-family: 'Abel', Courier New;
 }
+
+.app-footer p{
+  text-align: center;
+  }
