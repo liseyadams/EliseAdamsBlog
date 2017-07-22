@@ -31,7 +31,7 @@
 
           <%= yield %>
 
-          <%= render "shared/application_footer" %>
+          <%= render "shared/application_footer" unless current_page? root_path %>
 
           <%= alerts %>
 
