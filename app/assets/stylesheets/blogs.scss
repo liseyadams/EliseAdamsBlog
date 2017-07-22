@@ -103,12 +103,12 @@ font-family: 'Shadows Into Light', cursive;
 .blog-title {
   font-size: 2rem;
   font-weight: normal;
-  margin-left: -20%;
+  margin-left: -30%;
 }
 .blog-description {
   font-size: 1.1rem;
   color: #999;
-  margin-left: -15%;
+  margin-left: -10%;
 }
 
 @media (min-width: 40em) {
@@ -368,8 +368,9 @@ body {
 }
 
 .topic-label {
-  padding-left: 17%;
+  padding-left: 9.75%;
   padding-top: 1%;
+  padding-bottom: 1%;
 }
 
  .topics-style a:hover{
