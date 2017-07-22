@@ -204,7 +204,7 @@ font-family: 'Shadows Into Light', cursive;
  .blog-link {
   font-weight: lighter;
   text-decoration: none !important;
-  margin-left: 20vw;
+  margin-left: 22vw;
   position: fixed;
   }
 
@@ -367,4 +367,21 @@ font-family: 'Shadows Into Light', cursive;
   .titling {
   text-align: center;
   font-family: 'Abel', sans-serif;
+}
+
+.nav-rowing {
+  white-space: normal;
+  padding-left: 15%;
+  padding-top: 50%;
+}
+
+.links-home {
+  padding-right: 3%;
+  margin-left: 8.5%;
+}
+
+.links-home a {
+  text-decoration: none;
+  font-size: 200%;
+  font-family: 'Vibur', cursive;
 }
